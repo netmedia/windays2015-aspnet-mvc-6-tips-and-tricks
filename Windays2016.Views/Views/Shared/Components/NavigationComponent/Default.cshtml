@@ -1,0 +1,10 @@
+﻿@model List<Windays2016.Views.Components.ItemViewModel>
+
+<ul class="nav navbar-nav">
+    @foreach (var navigationItem in Model)
+    {
+        <li>
+            <a href="@navigationItem.TargetUrl">@navigationItem.Name</a>
+        </li>
+    }
+</ul>
